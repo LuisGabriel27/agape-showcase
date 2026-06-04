@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agape Boracay Academy Inc. | School of Zion - Preschool & Elementary in Boracay</title>
+    <meta name="description"
+        content="Agape Boracay Academy Inc. is a DepEd-recognized school in Malay, Boracay offering Preschool (Nursery, Kinder 1 & 2), Elementary (Grade 1-6), After-School Programs, and Counseling Services. Now enrolling for SY 2026-2027!">
+    <meta name="keywords"
+        content="Agape Boracay Academy, school in Boracay, preschool Boracay, elementary school Malay, DepEd recognized school, School of Zion">
+    <meta property="og:title" content="Agape Boracay Academy Inc. | School of Zion">
+    <meta property="og:description"
+        content="A DepEd-recognized school committed to developing future leaders. Now accepting enrollees for SY 2026-2027!">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="./images/agape-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'display': ['Fredoka', 'cursive'],
+                        'body': ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        'royal': {
+                            50: '#eef3ff',
+                            100: '#dce6ff',
+                            200: '#b2cdff',
+                            300: '#6da4ff',
+                            400: '#3b82f6',
+                            500: '#1a56db',
+                            600: '#0d3b9e',
+                            700: '#0a2d7a',
+                            800: '#0b2460',
+                            900: '#0c1e4f',
+                        },
+                        'sunshine': {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                        },
+                        'grass': {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                        },
+                        'coral': {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                        },
+                        'sky': {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                        },
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite',
+                        'wiggle': 'wiggle 1s ease-in-out infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'float-delay': 'float 3s ease-in-out 1.5s infinite',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-in-left': 'slideInLeft 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                        'pop': 'pop 0.5s ease-out',
+                        'sparkle': 'sparkle 2s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-3deg)' },
+                            '50%': { transform: 'rotate(3deg)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(30px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        pop: {
+                            '0%': { opacity: '0', transform: 'scale(0.8)' },
+                            '60%': { transform: 'scale(1.05)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                        sparkle: {
+                            '0%, 100%': { opacity: '1', transform: 'scale(1)' },
+                            '50%': { opacity: '0.6', transform: 'scale(1.2)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fef3c7;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1a56db;
+        }
+
+        /* Decorative Elements */
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .cloud::before,
+        .cloud::after {
+            content: '';
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+
+        /* Wavy Section Divider */
+        .wave-divider {
+            position: relative;
+        }
+
+        .wave-divider::after {
+            content: '';
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100'%3E%3Cpath fill='%23ffffff' d='M0,40 C240,100 480,0 720,40 C960,80 1200,0 1440,40 L1440,100 L0,100 Z'/%3E%3C/svg%3E") no-repeat;
+            background-size: cover;
+        }
+
+        /* Card Hover Effects */
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px) rotate(-1deg);
+        }
+
+        /* Confetti background pattern */
+        .confetti-bg {
+            background-image:
+                radial-gradient(circle at 10% 20%, #fbbf2433 2px, transparent 2px),
+                radial-gradient(circle at 30% 80%, #fb923c33 2px, transparent 2px),
+                radial-gradient(circle at 50% 40%, #4ade8033 2px, transparent 2px),
+                radial-gradient(circle at 70% 60%, #38bdf833 2px, transparent 2px),
+                radial-gradient(circle at 90% 30%, #f9731633 2px, transparent 2px),
+                radial-gradient(circle at 20% 50%, #3b82f633 2px, transparent 2px),
+                radial-gradient(circle at 80% 90%, #a855f733 2px, transparent 2px),
+                radial-gradient(circle at 60% 10%, #ec489933 2px, transparent 2px);
+            background-size: 100px 100px;
+        }
+
+        /* Floating decorations */
+        .deco-star {
+            display: inline-block;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        .deco-star:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .deco-star:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #1a56db 0%, #38bdf8 50%, #22c55e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Fun borders */
+        .fun-border {
+            border: 4px dashed #fbbf24;
+            border-radius: 20px;
+        }
+
+        /* Blob shapes */
+        .blob {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        /* Rainbow underline */
+        .rainbow-underline {
+            position: relative;
+        }
+
+        .rainbow-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #f97316, #fbbf24, #22c55e, #38bdf8, #3b82f6, #a855f7);
+            border-radius: 2px;
+        }
+
+        /* Enrollment badge pulse */
+        .pulse-badge {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.7);
+            }
+
+            50% {
+                box-shadow: 0 0 0 15px rgba(251, 191, 36, 0);
+            }
+        }
+
+        /* Navbar scrolled */
+        .nav-scrolled {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Lucide icon sizing helpers */
+        .icon-sm {
+            width: 16px;
+            height: 16px;
+        }
+
+        .icon-md {
+            width: 20px;
+            height: 20px;
+        }
+
+        .icon-lg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .icon-xl {
+            width: 28px;
+            height: 28px;
+        }
+
+        .icon-2xl {
+            width: 32px;
+            height: 32px;
+        }
+
+        .icon-3xl {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Floating decorative SVG shapes */
+        .deco-svg {
+            position: absolute;
+            opacity: 0.15;
+        }
+    </style>
+</head>
+
+<body class="font-body bg-white overflow-x-hidden">
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <img src="./images/agape-logo.png" alt="Agape Boracay Academy Logo"
+                        class="w-14 h-14 rounded-full shadow-lg group-hover:animate-wiggle transition-transform">
+                    <div class="hidden sm:block">
+                        <h1 class="font-display font-bold text-royal-700 text-lg leading-tight">Agape Boracay</h1>
+                        <p class="font-display text-sunshine-500 text-sm font-medium">Academy Inc.</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-1">
+                    <a href="#home"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">Home</a>
+                    <a href="#about"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">About</a>
+                    <a href="#services"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">Programs</a>
+                    <a href="#why-us"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">Why
+                        Us</a>
+                    <a href="#gallery"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">Gallery</a>
+                    <a href="#contact"
+                        class="nav-link px-4 py-2 rounded-full text-royal-700 font-semibold hover:bg-royal-50 hover:text-royal-600 transition-all">Contact</a>
+                    <a href="#enroll"
+                        class="ml-3 px-6 py-2.5 bg-gradient-to-r from-sunshine-400 to-coral-400 text-white font-bold rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all font-display inline-flex items-center gap-2">
+                        <i data-lucide="backpack" class="icon-md"></i> Enroll Now!
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 rounded-xl bg-royal-50 text-royal-600 hover:bg-royal-100 transition-colors"
+                    aria-label="Toggle mobile menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white shadow-2xl md:hidden z-50">
+            <div class="p-6">
+                <button id="close-menu-btn" class="mb-8 p-2 rounded-full bg-royal-50 text-royal-600 hover:bg-royal-100"
+                    aria-label="Close menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="flex flex-col gap-2">
+                    <a href="#home"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="home" class="icon-md"></i> Home
+                    </a>
+                    <a href="#about"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="book-open" class="icon-md"></i> About
+                    </a>
+                    <a href="#services"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="graduation-cap" class="icon-md"></i> Programs
+                    </a>
+                    <a href="#why-us"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="star" class="icon-md"></i> Why Us
+                    </a>
+                    <a href="#gallery"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="camera" class="icon-md"></i> Gallery
+                    </a>
+                    <a href="#contact"
+                        class="mobile-link px-4 py-3 rounded-xl text-royal-700 font-semibold hover:bg-royal-50 transition-all text-lg flex items-center gap-3">
+                        <i data-lucide="phone" class="icon-md"></i> Contact
+                    </a>
+                    <a href="#enroll"
+                        class="mt-4 px-6 py-3 bg-gradient-to-r from-sunshine-400 to-coral-400 text-white font-bold rounded-full text-center shadow-lg font-display text-lg inline-flex items-center justify-center gap-2">
+                        <i data-lucide="backpack" class="icon-md"></i> Enroll Now!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-20">
+        <!-- Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-sky-100 via-royal-50 to-sunshine-50"></div>
+
+        <!-- Decorative floating SVG elements -->
+        <div class="deco-svg top-32 left-10 animate-float text-sky-300">
+            <svg width="80" height="50" viewBox="0 0 80 50" fill="currentColor">
+                <ellipse cx="30" cy="30" rx="30" ry="18" />
+                <ellipse cx="50" cy="20" rx="25" ry="18" />
+                <ellipse cx="20" cy="22" rx="18" ry="14" />
+            </svg>
+        </div>
+        <div class="deco-svg top-44 right-16 animate-float-delay text-sky-300">
+            <svg width="70" height="45" viewBox="0 0 70 45" fill="currentColor">
+                <ellipse cx="25" cy="25" rx="25" ry="15" />
+                <ellipse cx="45" cy="18" rx="22" ry="15" />
+            </svg>
+        </div>
+        <div class="deco-svg bottom-40 left-20 animate-bounce-slow text-sunshine-400" style="opacity:0.2">
+            <i data-lucide="rainbow" style="width:48px;height:48px"></i>
+        </div>
+        <div class="deco-svg top-60 right-32 animate-wiggle text-sunshine-400" style="opacity:0.2">
+            <i data-lucide="star" style="width:36px;height:36px"></i>
+        </div>
+        <div class="deco-svg bottom-32 right-10 animate-float text-coral-300" style="opacity:0.2">
+            <i data-lucide="flower-2" style="width:44px;height:44px"></i>
+        </div>
+        <div class="deco-svg top-80 left-40 animate-float-delay text-grass-300" style="opacity:0.15">
+            <i data-lucide="bird" style="width:36px;height:36px"></i>
+        </div>
+        <div class="deco-svg bottom-60 left-1/2 animate-bounce-slow text-sunshine-300" style="opacity:0.15">
+            <i data-lucide="sun" style="width:32px;height:32px"></i>
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-0">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="text-center lg:text-left space-y-6">
+                    <!-- DepEd Badge -->
+                    <div
+                        class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm rounded-full px-5 py-2 shadow-md animate-slide-up">
+                        <i data-lucide="badge-check" class="icon-lg text-grass-500"></i>
+                        <span class="font-bold text-royal-700 text-sm">DepEd Recognized • School ID: 438045</span>
+                    </div>
+
+                    <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight animate-slide-up"
+                        style="animation-delay: 0.2s">
+                        <span class="text-royal-700">Welcome to</span><br>
+                        <span class="gradient-text">School of Zion</span>
+                        <i data-lucide="sparkles" class="inline-block animate-wiggle text-sunshine-400"
+                            style="width:40px;height:40px;vertical-align:middle"></i>
+                    </h2>
+
+                    <p class="text-lg sm:text-xl text-royal-600/80 max-w-lg mx-auto lg:mx-0 font-medium animate-slide-up"
+                        style="animation-delay: 0.4s">
+                        Agape Boracay Academy Inc. is a non-stock, non-profit institution committed to developing and
+                        raising up future leaders through
+                        <span class="text-sunshine-500 font-bold">faith</span>,
+                        <span class="text-grass-500 font-bold">knowledge</span>, and
+                        <span class="text-coral-500 font-bold">love</span>.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-slide-up"
+                        style="animation-delay: 0.6s">
+                        <a href="#enroll"
+                            class="pulse-badge inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-sunshine-400 via-sunshine-500 to-coral-400 text-white font-display font-bold text-xl rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all">
+                            <i data-lucide="backpack" class="icon-lg"></i> Enroll Now — SY 2026-2027
+                        </a>
+                        <a href="#services"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-royal-600 font-display font-bold text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all border-2 border-royal-200">
+                            <i data-lucide="book-open" class="icon-lg"></i> Our Programs
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="flex gap-6 justify-center lg:justify-start pt-4 animate-slide-up"
+                        style="animation-delay: 0.8s">
+                        <div class="text-center">
+                            <div class="font-display font-bold text-3xl text-royal-700">10+</div>
+                            <div class="text-sm text-royal-500 font-medium">Years of Service</div>
+                        </div>
+                        <div class="w-px bg-royal-200"></div>
+                        <div class="text-center">
+                            <div class="font-display font-bold text-3xl text-grass-500">500+</div>
+                            <div class="text-sm text-royal-500 font-medium">Happy Students</div>
+                        </div>
+                        <div class="w-px bg-royal-200"></div>
+                        <div class="text-center">
+                            <div class="font-display font-bold text-3xl text-sunshine-500">4</div>
+                            <div class="text-sm text-royal-500 font-medium">Programs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image -->
+                <div class="relative animate-pop">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="./images/hero-banner.png" alt="Happy students at Agape Boracay Academy"
+                            class="w-full h-auto object-cover">
+                        <!-- Overlay Gradient -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-royal-900/20 to-transparent"></div>
+                    </div>
+                    <!-- Decorative floating badges -->
+                    <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl p-3 animate-float">
+                        <i data-lucide="school" class="icon-2xl text-royal-500"></i>
+                    </div>
+                    <div
+                        class="absolute -bottom-4 -left-4 bg-sunshine-400 text-white rounded-2xl shadow-xl px-4 py-3 font-display font-bold animate-float-delay flex items-center gap-2">
+                        <i data-lucide="book-open-text" class="icon-md"></i>
+                        <span class="text-sm">Psalm 119:105</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave Bottom -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full">
+                <path fill="#ffffff" d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-royal-50 text-royal-600 rounded-full font-display font-bold text-sm mb-4">
+                    <i data-lucide="book-open" class="icon-sm"></i> About Us
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-royal-800 mb-4">
+                    Nurturing Young Minds <i data-lucide="lightbulb"
+                        class="inline-block animate-wiggle text-sunshine-400"
+                        style="width:36px;height:36px;vertical-align:middle"></i>
+                </h2>
+                <p class="text-royal-500 text-lg max-w-2xl mx-auto">
+                    Where faith meets excellence in the heart of beautiful Boracay Island
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- About Image -->
+                <div class="reveal relative">
+                    <div class="bg-gradient-to-br from-royal-400 to-sky-400 rounded-3xl p-2">
+                        <img src="./images/hero-banner.png" alt="Our campus and students"
+                            class="rounded-2xl w-full h-80 object-cover">
+                    </div>
+                    <!-- Floating accent -->
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-sunshine-400 rounded-2xl shadow-xl p-5 text-white font-display font-bold text-center">
+                        <i data-lucide="hand-heart" class="icon-3xl mx-auto mb-1"></i>
+                        <div class="text-sm mt-1">Faith-Based<br>Education</div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="reveal space-y-6">
+                    <h3 class="font-display text-3xl font-bold text-royal-700">
+                        Our Mission & Vision
+                    </h3>
+                    <p class="text-royal-600 text-lg leading-relaxed">
+                        <strong class="text-royal-800">Agape Boracay Academy Inc.</strong> is a non-stock, non-profit
+                        institution committed to developing and raising up future leaders. Guided by our faith and
+                        inspired by Psalm 119:105 — <em>"Your word is a lamp for my feet, a light on my path"</em> — we
+                        provide holistic education that nurtures the mind, body, and spirit.
+                    </p>
+                    <p class="text-royal-600 text-lg leading-relaxed">
+                        As the <strong class="text-sunshine-600">School of Zion</strong>, we are proud to be recognized
+                        by the Department of Education (DepEd), ensuring our students receive quality, standards-based
+                        education right here in the beautiful island of Boracay.
+                    </p>
+
+                    <!-- Key Values -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3 bg-royal-50 rounded-xl p-4">
+                            <div
+                                class="w-10 h-10 bg-royal-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="book-open-text" class="icon-md text-royal-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-royal-700">Faith-Centered</div>
+                                <div class="text-sm text-royal-500">Biblical foundation</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-grass-50 rounded-xl p-4">
+                            <div
+                                class="w-10 h-10 bg-grass-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="sprout" class="icon-md text-grass-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-grass-700">Holistic Growth</div>
+                                <div class="text-sm text-grass-500">Mind, body & spirit</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-sunshine-50 rounded-xl p-4">
+                            <div
+                                class="w-10 h-10 bg-sunshine-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="users" class="icon-md text-sunshine-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-sunshine-700">Community</div>
+                                <div class="text-sm text-sunshine-600">Family atmosphere</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 bg-coral-50 rounded-xl p-4">
+                            <div
+                                class="w-10 h-10 bg-coral-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="trophy" class="icon-md text-coral-500"></i>
+                            </div>
+                            <div>
+                                <div class="font-bold text-coral-500">Excellence</div>
+                                <div class="text-sm text-coral-400">DepEd standards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES / PROGRAMS SECTION ========== -->
+    <section id="services" class="py-20 bg-gradient-to-b from-white via-sky-50 to-royal-50 relative confetti-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-sunshine-100 text-sunshine-700 rounded-full font-display font-bold text-sm mb-4">
+                    <i data-lucide="graduation-cap" class="icon-sm"></i> Our Programs
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-royal-800 mb-4">
+                    What We Offer <i data-lucide="sparkles" class="deco-star inline-block text-sunshine-400"
+                        style="width:32px;height:32px;vertical-align:middle"></i>
+                </h2>
+                <p class="text-royal-500 text-lg max-w-2xl mx-auto">
+                    Comprehensive educational programs designed to bring out the best in every child
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Preschool -->
+                <div
+                    class="service-card reveal bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-sky-400 group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/preschool.png" alt="Preschool Program - Nursery, Kinder 1 and 2"
+                            class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-sky-600/40 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 font-display font-bold text-sky-600 text-sm">
+                            Ages 3-5</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center mb-3">
+                            <i data-lucide="baby" class="icon-lg text-sky-500"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-royal-700 mb-2">Preschool</h3>
+                        <p class="text-royal-500 text-sm mb-3">A nurturing early learning environment where little ones
+                            explore, create, and grow.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-sky-100 text-sky-700 rounded-full px-3 py-1 font-semibold">Nursery</span>
+                            <span class="text-xs bg-sky-100 text-sky-700 rounded-full px-3 py-1 font-semibold">Kinder
+                                1</span>
+                            <span class="text-xs bg-sky-100 text-sky-700 rounded-full px-3 py-1 font-semibold">Kinder
+                                2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elementary -->
+                <div class="service-card reveal bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-grass-400 group cursor-pointer"
+                    style="animation-delay: 0.15s">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/elementary.png" alt="Elementary Program - Grade 1 to 6"
+                            class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-grass-600/40 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 font-display font-bold text-grass-600 text-sm">
+                            Grade 1-6</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-grass-100 rounded-xl flex items-center justify-center mb-3">
+                            <i data-lucide="book-open" class="icon-lg text-grass-500"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-royal-700 mb-2">Elementary</h3>
+                        <p class="text-royal-500 text-sm mb-3">Building strong academic foundations with values-based
+                            education for young learners.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-grass-100 text-grass-700 rounded-full px-3 py-1 font-semibold">Grade
+                                1-3</span>
+                            <span class="text-xs bg-grass-100 text-grass-700 rounded-full px-3 py-1 font-semibold">Grade
+                                4-6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- After-School -->
+                <div class="service-card reveal bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-sunshine-400 group cursor-pointer"
+                    style="animation-delay: 0.3s">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/afterschool.png" alt="After-School Program - Enrichment activities"
+                            class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-sunshine-600/40 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 font-display font-bold text-sunshine-600 text-sm">
+                            All Ages</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-sunshine-100 rounded-xl flex items-center justify-center mb-3">
+                            <i data-lucide="palette" class="icon-lg text-sunshine-500"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-royal-700 mb-2">After-School Program</h3>
+                        <p class="text-royal-500 text-sm mb-3">Fun enrichment activities, tutoring, and supervised play
+                            after regular school hours.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-sunshine-100 text-sunshine-700 rounded-full px-3 py-1 font-semibold">Tutoring</span>
+                            <span
+                                class="text-xs bg-sunshine-100 text-sunshine-700 rounded-full px-3 py-1 font-semibold">Activities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Counseling -->
+                <div class="service-card reveal bg-white rounded-3xl shadow-xl overflow-hidden border-b-4 border-coral-400 group cursor-pointer"
+                    style="animation-delay: 0.45s">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/counseling.png" alt=" Counseling Service - Student support"
+                            class="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-coral-600/40 to-transparent"></div>
+                        <div
+                            class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 font-display font-bold text-coral-500 text-sm">
+                            Support</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="w-12 h-12 bg-coral-100 rounded-xl flex items-center justify-center mb-3">
+                            <i data-lucide="heart-handshake" class="icon-lg text-coral-400"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-royal-700 mb-2">Counseling Service</h3>
+                        <p class="text-royal-500 text-sm mb-3">Professional guidance and emotional support to help every
+                            student thrive and succeed.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="text-xs bg-coral-100 text-coral-500 rounded-full px-3 py-1 font-semibold">Guidance</span>
+                            <span
+                                class="text-xs bg-coral-100 text-coral-500 rounded-full px-3 py-1 font-semibold">Wellness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section id="why-us" class="py-20 bg-white relative overflow-hidden">
+        <!-- Decorative bg -->
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-sunshine-100 rounded-full -translate-y-1/2 translate-x-1/2 opacity-50">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-80 h-80 bg-sky-100 rounded-full translate-y-1/2 -translate-x-1/2 opacity-50">
+        </div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-grass-100 text-grass-700 rounded-full font-display font-bold text-sm mb-4">
+                    <i data-lucide="star" class="icon-sm"></i> Why Choose Us
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-royal-800 mb-4">
+                    Why Families Love Us <i data-lucide="heart" class="inline-block animate-bounce-slow text-coral-400"
+                        style="width:36px;height:36px;vertical-align:middle"></i>
+                </h2>
+                <p class="text-royal-500 text-lg max-w-2xl mx-auto">
+                    We're more than just a school — we're a family that cares deeply about every child's journey
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="reveal bg-gradient-to-br from-royal-50 to-sky-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-royal-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="tree-palm" class="icon-2xl text-royal-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Island Paradise Campus</h3>
+                    <p class="text-royal-500">Located in beautiful Boracay, our campus offers a unique tropical learning
+                        environment that inspires creativity and wonder.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="reveal bg-gradient-to-br from-sunshine-50 to-coral-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-sunshine-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="user-check" class="icon-2xl text-sunshine-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Dedicated Teachers</h3>
+                    <p class="text-royal-500">Our passionate and qualified teachers provide personalized attention to
+                        ensure every child reaches their full potential.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="reveal bg-gradient-to-br from-grass-50 to-sky-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-grass-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="icon-2xl text-grass-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">DepEd Recognized</h3>
+                    <p class="text-royal-500">Fully recognized by the Department of Education, meeting national
+                        standards for quality education and student development.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class="reveal bg-gradient-to-br from-coral-50 to-sunshine-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-coral-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="hand-heart" class="icon-2xl text-coral-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Values-Based Education</h3>
+                    <p class="text-royal-500">Grounded in Christian values, we develop not just academic excellence but
+                        also strong character and moral integrity.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div
+                    class="reveal bg-gradient-to-br from-sky-50 to-royal-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users-round" class="icon-2xl text-sky-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Small Class Sizes</h3>
+                    <p class="text-royal-500">With smaller class sizes, each child receives the individual attention and
+                        care they deserve to thrive academically.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div
+                    class="reveal bg-gradient-to-br from-grass-50 to-sunshine-50 rounded-3xl p-8 group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                    <div
+                        class="w-16 h-16 bg-grass-100 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="drama" class="icon-2xl text-grass-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Enrichment Activities</h3>
+                    <p class="text-royal-500">Beyond academics, we offer arts, sports, and cultural activities that help
+                        children discover their unique talents and gifts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section id="gallery" class="py-20 bg-gradient-to-b from-royal-50 via-sunshine-50 to-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-coral-100 text-coral-500 rounded-full font-display font-bold text-sm mb-4">
+                    <i data-lucide="images" class="icon-sm"></i> Gallery
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-royal-800 mb-4">
+                    Life at Agape Academy <i data-lucide="camera" class="inline-block animate-wiggle text-royal-400"
+                        style="width:36px;height:36px;vertical-align:middle"></i>
+                </h2>
+                <p class="text-royal-500 text-lg max-w-2xl mx-auto">
+                    A peek into our vibrant school life, celebrations, and everyday learning adventures
+                </p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div
+                    class="reveal col-span-2 row-span-2 rounded-3xl overflow-hidden shadow-lg group cursor-pointer relative">
+                    <img src="./images/1.jpg" alt="Students at Agape Academy"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-royal-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white font-display font-bold text-lg flex items-center gap-2">
+                            <i data-lucide="graduation-cap" class="icon-lg"></i> Our Amazing Students
+                        </span>
+                    </div>
+                </div>
+                <div class="reveal rounded-3xl overflow-hidden shadow-lg group cursor-pointer relative">
+                    <img src="./images/2.jpg" alt="Preschool activities"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-sky-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-display font-bold flex items-center gap-2">
+                            <i data-lucide="baby" class="icon-md"></i> Preschool Fun
+                        </span>
+                    </div>
+                </div>
+                <div class="reveal rounded-3xl overflow-hidden shadow-lg group cursor-pointer relative">
+                    <img src="./images/3.jpg" alt="Elementary learning"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-royal-800/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-display font-bold flex items-center gap-2">
+                            <i data-lucide="book-open" class="icon-md"></i> Learning Time
+                        </span>
+                    </div>
+                </div>
+                <div class="reveal rounded-3xl overflow-hidden shadow-lg group cursor-pointer relative">
+                    <img src="./images/4.jpg" alt="After-school activities"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-royal-800/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-display font-bold flex items-center gap-2">
+                            <i data-lucide="palette" class="icon-md"></i> Creative Time
+                        </span>
+                    </div>
+                </div>
+                <div class="reveal rounded-3xl overflow-hidden shadow-lg group cursor-pointer relative">
+                    <img src="./images/5.jpg" alt="Counseling and support"
+                        class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-royal-800/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                        <span class="text-white font-display font-bold flex items-center gap-2">
+                            <i data-lucide="heart-handshake" class="icon-md"></i> Student Support
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENROLLMENT CTA SECTION ========== -->
+    <section id="enroll" class="py-20 relative overflow-hidden">
+        <!-- Colorful Background -->
+        <div class="absolute inset-0 bg-gradient-to-br from-royal-600 via-royal-700 to-royal-800"></div>
+        <!-- Decorative shapes -->
+        <div class="absolute top-10 left-10 w-32 h-32 bg-sunshine-400/20 rounded-full blur-xl"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-sky-400/20 rounded-full blur-xl"></div>
+        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-grass-400/20 rounded-full blur-xl"></div>
+
+        <!-- Floating icons -->
+        <div class="deco-svg top-16 right-20 animate-float text-white" style="opacity:0.1">
+            <i data-lucide="backpack" style="width:56px;height:56px"></i>
+        </div>
+        <div class="deco-svg bottom-20 left-16 animate-float-delay text-white" style="opacity:0.1">
+            <i data-lucide="book-open" style="width:48px;height:48px"></i>
+        </div>
+        <div class="deco-svg top-32 left-1/3 animate-bounce-slow text-white" style="opacity:0.1">
+            <i data-lucide="star" style="width:36px;height:36px"></i>
+        </div>
+        <div class="deco-svg bottom-32 right-1/3 animate-wiggle text-white" style="opacity:0.1">
+            <i data-lucide="graduation-cap" style="width:48px;height:48px"></i>
+        </div>
+
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-2 bg-sunshine-400/20 backdrop-blur-sm rounded-full px-6 py-2 mb-6">
+                    <i data-lucide="sparkles" class="icon-lg text-sunshine-300"></i>
+                    <span class="text-sunshine-300 font-display font-bold">Now Accepting Enrollees!</span>
+                </div>
+
+                <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+                    School Year <span class="text-sunshine-400">2026-2027</span>
+                </h2>
+
+                <p class="text-xl text-royal-200 mb-10 max-w-2xl mx-auto">
+                    Give your child the gift of quality education in a nurturing, faith-based environment.
+                    Start their journey with us today!
+                </p>
+
+                <!-- Programs Checklist -->
+                <div class="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-10">
+                    <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <i data-lucide="circle-check-big" class="icon-lg text-grass-400 flex-shrink-0"></i>
+                        <span class="text-white font-semibold">Preschool (Nursery, K1 & K2)</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <i data-lucide="circle-check-big" class="icon-lg text-grass-400 flex-shrink-0"></i>
+                        <span class="text-white font-semibold">Elementary (Grade 1-6)</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <i data-lucide="circle-check-big" class="icon-lg text-grass-400 flex-shrink-0"></i>
+                        <span class="text-white font-semibold">After-School Program</span>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-xl px-5 py-3">
+                        <i data-lucide="circle-check-big" class="icon-lg text-grass-400 flex-shrink-0"></i>
+                        <span class="text-white font-semibold">Counseling Service</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.facebook.com/agapeboracayacademyinc" target="_blank" rel="noopener noreferrer"
+                        class="pulse-badge inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-sunshine-400 to-coral-400 text-royal-900 font-display font-bold text-xl rounded-full shadow-2xl hover:shadow-3xl hover:scale-105 transition-all">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        Inquire on Facebook
+                    </a>
+                    <a href="#contact"
+                        class="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white/20 backdrop-blur-sm text-white font-display font-bold text-xl rounded-full shadow-xl hover:bg-white/30 hover:scale-105 transition-all border-2 border-white/30">
+                        <i data-lucide="phone" class="icon-lg"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-flex items-center gap-2 px-4 py-1.5 bg-sky-100 text-sky-600 rounded-full font-display font-bold text-sm mb-4">
+                    <i data-lucide="mail" class="icon-sm"></i> Get in Touch
+                </span>
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-royal-800 mb-4">
+                    Contact Us <i data-lucide="hand-metal" class="inline-block animate-bounce-slow text-sunshine-400"
+                        style="width:36px;height:36px;vertical-align:middle"></i>
+                </h2>
+                <p class="text-royal-500 text-lg max-w-2xl mx-auto">
+                    We'd love to hear from you! Visit us, call us, or send a message through our Facebook page.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Location -->
+                <div
+                    class="reveal text-center bg-gradient-to-br from-royal-50 to-sky-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div
+                        class="w-20 h-20 bg-royal-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="map-pin" class="icon-3xl text-royal-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Visit Us</h3>
+                    <p class="text-royal-500">Malay, Aklan<br>Boracay Island<br>Philippines</p>
+                </div>
+
+                <!-- Facebook -->
+                <div
+                    class="reveal text-center bg-gradient-to-br from-sunshine-50 to-coral-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div
+                        class="w-20 h-20 bg-sunshine-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="message-circle" class="icon-3xl text-sunshine-600"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">Message Us</h3>
+                    <p class="text-royal-500 mb-4">Reach out through our<br>Facebook Page</p>
+                    <a href="https://www.facebook.com/agapeboracayacademyinc" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 bg-royal-600 text-white px-5 py-2.5 rounded-full font-bold hover:bg-royal-700 transition-colors text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        Facebook Page
+                    </a>
+                </div>
+
+                <!-- School Hours -->
+                <div
+                    class="reveal text-center bg-gradient-to-br from-grass-50 to-sky-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div
+                        class="w-20 h-20 bg-grass-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:scale-110 transition-transform">
+                        <i data-lucide="clock" class="icon-3xl text-grass-500"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-xl text-royal-700 mb-3">School Hours</h3>
+                    <p class="text-royal-500">Monday - Friday<br>7:00 AM - 5:00 PM</p>
+                    <p class="text-royal-400 text-sm mt-2">After-school program available</p>
+                </div>
+            </div>
+
+            <!-- Map Embed (Boracay area) -->
+            <div class="reveal mt-12 rounded-3xl overflow-hidden shadow-xl border-4 border-royal-100">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31249.89684965!2d121.9137!3d11.9674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a530a9b20290d9%3A0x3a2e73b0b2691f43!2sBoracay!5e0!3m2!1sen!2sph!4v1700000000000"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Agape Boracay Academy location map">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-royal-800 text-white pt-16 pb-8 relative overflow-hidden">
+        <!-- Decorative top wave -->
+        <div class="absolute top-0 left-0 right-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" class="w-full -mt-px">
+                <path fill="#ffffff" d="M0,20 C480,60 960,0 1440,20 L1440,0 L0,0 Z"></path>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 mb-12">
+                <!-- School Info -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="./images/agape-logo.png" alt="Agape Boracay Academy Logo"
+                            class="w-14 h-14 rounded-full shadow-lg">
+                        <div>
+                            <h3 class="font-display font-bold text-xl">Agape Boracay</h3>
+                            <p class="font-display text-sunshine-400 text-sm font-medium">Academy Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-royal-300 leading-relaxed mb-4">
+                        A non-stock, non-profit institution committed to developing future leaders through faith,
+                        knowledge, and love.
+                    </p>
+                    <div class="flex items-center gap-2 text-sunshine-400 font-display font-bold">
+                        <i data-lucide="book-open-text" class="icon-md"></i> Psalm 119:105
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-display font-bold text-lg mb-4 text-sunshine-400">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="#home"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="home" class="icon-sm"></i> Home
+                        </a>
+                        <a href="#about"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="book-open" class="icon-sm"></i> About Us
+                        </a>
+                        <a href="#services"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="graduation-cap" class="icon-sm"></i> Programs
+                        </a>
+                        <a href="#why-us"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="star" class="icon-sm"></i> Why Choose Us
+                        </a>
+                        <a href="#gallery"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="camera" class="icon-sm"></i> Gallery
+                        </a>
+                        <a href="#contact"
+                            class="flex items-center gap-2 text-royal-300 hover:text-white transition-colors">
+                            <i data-lucide="phone" class="icon-sm"></i> Contact
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Programs -->
+                <div>
+                    <h3 class="font-display font-bold text-lg mb-4 text-sunshine-400">Our Programs</h3>
+                    <div class="space-y-2">
+                        <p class="flex items-center gap-2 text-royal-300">
+                            <i data-lucide="baby" class="icon-sm flex-shrink-0"></i> Preschool (Nursery, K1 & K2)
+                        </p>
+                        <p class="flex items-center gap-2 text-royal-300">
+                            <i data-lucide="book-open" class="icon-sm flex-shrink-0"></i> Elementary (Grade 1-6)
+                        </p>
+                        <p class="flex items-center gap-2 text-royal-300">
+                            <i data-lucide="palette" class="icon-sm flex-shrink-0"></i> After-School Program
+                        </p>
+                        <p class="flex items-center gap-2 text-royal-300">
+                            <i data-lucide="heart-handshake" class="icon-sm flex-shrink-0"></i> Counseling Service
+                        </p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://www.facebook.com/agapeboracayacademyinc" target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 bg-royal-700 hover:bg-royal-600 text-white px-4 py-2 rounded-full transition-colors text-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Follow us on Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-royal-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-royal-400 text-sm text-center md:text-left">
+                        © 2026 Agape Boracay Academy Inc. All rights reserved. | School ID No.: 438045
+                    </p>
+                    <p class="text-royal-400 text-sm flex items-center gap-1">
+                        Recognized by <span class="text-sunshine-400 font-bold">DepEd</span>
+                        <i data-lucide="landmark" class="icon-sm text-sunshine-400 ml-1"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP BUTTON ========== -->
+    <button id="back-to-top"
+        class="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-sunshine-400 to-coral-400 text-white rounded-full shadow-xl hover:shadow-2xl hover:scale-110 transition-all z-40 opacity-0 invisible flex items-center justify-center"
+        aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // ===== Initialize Lucide Icons =====
+        lucide.createIcons();
+
+        // ===== Mobile Menu Toggle =====
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('open');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
+        // ===== Navbar Scroll Effect =====
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 80) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+
+        // ===== Back to Top Button =====
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== Scroll Reveal Animation =====
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            revealElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const revealPoint = 150;
+                if (elementTop < windowHeight - revealPoint) {
+                    el.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll);
+
+        // ===== Active Nav Link Highlighting =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-royal-50', 'text-royal-500');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('bg-royal-50', 'text-royal-500');
+                }
+            });
+        });
+
+        // ===== Smooth Counter Animation =====
+        const counters = document.querySelectorAll('[data-count]');
+        const animateCounter = (el) => {
+            const target = +el.dataset.count;
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    el.textContent = target + (el.dataset.suffix || '');
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current) + (el.dataset.suffix || '');
+                }
+            }, 16);
+        };
+
+        // ===== Subtle cursor sparkle (desktop only) =====
+        if (window.innerWidth > 768) {
+            const colors = ['#3b82f6', '#fbbf24', '#22c55e', '#fb923c', '#38bdf8'];
+            document.addEventListener('mousemove', (e) => {
+                if (Math.random() > 0.94) {
+                    const dot = document.createElement('div');
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    const size = Math.random() * 6 + 3;
+                    dot.style.cssText = `
+                        position: fixed;
+                        left: ${e.clientX}px;
+                        top: ${e.clientY}px;
+                        width: ${size}px;
+                        height: ${size}px;
+                        background: ${color};
+                        border-radius: 50%;
+                        pointer-events: none;
+                        z-index: 9999;
+                        transition: all 0.8s ease;
+                        opacity: 0.7;
+                    `;
+                    document.body.appendChild(dot);
+                    requestAnimationFrame(() => {
+                        dot.style.transform = `translateY(-30px) scale(0)`;
+                        dot.style.opacity = '0';
+                    });
+                    setTimeout(() => dot.remove(), 800);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

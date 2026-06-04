@@ -1,0 +1,10 @@
+{
+  "name": "agape-boracay-academy",
+  "version": "1.0.0",
+  "description": "Agape Boracay Academy Inc. - School of Zion website",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  }
+}
